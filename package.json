@@ -1,5 +1,6 @@
 {
   "name": "sujan-timalsina-portfolio",
+  "homepage": "https://timalsinasujan.github.io/portfolio-new/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "react-dom": "^19.2.0",
+    "gh-pages": "^6.3.0",
+    "lucide-react": "^0.555.0",
     "react": "^19.2.0",
-    "lucide-react": "^0.555.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
